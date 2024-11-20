@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#74687C"
+    tools:context=".LoginActivity">
+    
+    <LinearLayout
+        android:id="@+id/loreContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="40dp"
+        android:background="@drawable/rounded_white_box"
+        android:clipToOutline="true"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="50dp"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintHeight_percent="0.7"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintDimensionRatio="364:470" >
+
+        <TextView
+            android:id="@+id/loginTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="LOGIN"
+            android:textColor="#471D43"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/loginEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Enter Email Address"
+            android:padding="14dp"
+            android:textColor="#471D43"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp" />
+
+        <EditText
+            android:id="@+id/loginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Enter Password"
+            android:padding="14dp"
+            android:textColor="#471D43"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/forgotpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignStart="@id/loginPassword"
+            android:background="@android:color/transparent"
+            android:padding="5dp"
+            android:text="Forgot Password?"
+            android:textAllCaps="false"
+            android:textColor="#471D43"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/button_purplestroke"
+        android:elevation="2dp"
+        android:padding="5dp"
+        android:text="LOGIN"
+        android:gravity="center"
+        android:textColor="#F5EFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/donthaveacc"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="start"
+            android:text="Don't have an account?"
+            android:textColor="#471D43"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:padding="2dp"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"/>
+
+        <Button
+            android:id="@+id/registernowButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:paddingStart="2dp"
+            android:text="Register now"
+            android:textAllCaps="false"
+            android:textColor="#471D43"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
