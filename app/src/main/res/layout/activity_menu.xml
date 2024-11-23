@@ -18,8 +18,8 @@
 
         <ImageButton
             android:id="@+id/white_left_arrow"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:layout_gravity="center_vertical"
             android:layout_marginStart="16dp"
             android:background="@android:color/transparent"
@@ -30,11 +30,11 @@
         <TextView
             android:id="@+id/menuTitle"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:layout_gravity="center"
             android:text="Judul Menu"
             android:textColor="#FFFFFF"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:textStyle="bold" />
     </androidx.appcompat.widget.Toolbar>
 
