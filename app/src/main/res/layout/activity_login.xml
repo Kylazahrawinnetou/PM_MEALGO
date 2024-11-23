@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/c_74687C"
+    android:background="@color/c_74687c"
     tools:context=".LoginActivity">
     
     <LinearLayout
@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="LOGIN"
-            android:textColor="@color/c_471D43"
+            android:textColor="@color/c_471d43"
             android:textSize="32sp"
             android:textStyle="bold"
             android:layout_marginTop="15dp"/>
@@ -44,7 +44,7 @@
             android:background="@drawable/rounded_edittext"
             android:hint="Enter Email Address"
             android:padding="14dp"
-            android:textColor="@color/c_471D43"
+            android:textColor="@color/c_471d43"
             android:textSize="20sp"
             android:layout_marginTop="15dp" />
 
@@ -55,7 +55,7 @@
             android:background="@drawable/rounded_edittext"
             android:hint="Enter Password"
             android:padding="14dp"
-            android:textColor="@color/c_471D43"
+            android:textColor="@color/c_471d43"
             android:textSize="20sp"
             android:layout_marginTop="10dp" />
 
@@ -68,7 +68,7 @@
         android:padding="5dp"
         android:text="LOGIN"
         android:gravity="center"
-        android:textColor="@color/c_F5EFFF"
+        android:textColor="@color/c_f5Efff"
         android:textSize="20sp"
         android:textStyle="bold"
         android:layout_marginTop="30dp" />
@@ -85,7 +85,7 @@
             android:layout_gravity="center_vertical"
             android:gravity="start"
             android:text="Don't have an account?"
-            android:textColor="@color/c_471D43"
+            android:textColor="@color/c_471d43"
             android:textSize="13sp"
             android:textStyle="bold"
             android:padding="2dp"
@@ -102,7 +102,7 @@
             android:paddingStart="2dp"
             android:text="Register now"
             android:textAllCaps="false"
-            android:textColor="@color/c_471D43"
+            android:textColor="@color/c_471d43"
             android:textSize="15sp"
             android:textStyle="bold" />
 
