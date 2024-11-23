@@ -10,10 +10,16 @@
     <string name="Food">Food</string>
     <string name="Drinks">Drinks</string>
     <string name="Black_Search_Icon">Black_Search_Icon</string>
+    <string name="White_Left_Arrow">White_Left_Arrow</string>
     <string name="White_Right_Arrow">White_Right_Arrow</string>
     <string name="NewArrivalsTitle">New Arrivals</string>
     <string name="PopularTitle">Popular</string>
     <string name="ExploreTitle">Explore</string>
+    <string name="Menu_Story">Menu Story</string>
+    <string name="Ingredients_List">Ingredients List</string>
+    <string name="Instructions">Instructions</string>
+
+
 
     <string name="GambarMenu1">Gambar Menu 1</string>
     <string name="GambarMenu2">Gambar Menu 2</string>
