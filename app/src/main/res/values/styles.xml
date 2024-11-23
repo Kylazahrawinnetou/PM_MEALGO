@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Style untuk Button tanpa Capslock -->
+    <style name="ButtonStyle.NoCaps" parent="Widget.AppCompat.Button">
+        <item name="textAllCaps">false</item>
+    </style>
+
+</resources>

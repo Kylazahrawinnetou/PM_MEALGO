@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#74687C"
+    android:background="@color/c_74687c"
     tools:context=".RegisterActivity">
 
     <LinearLayout
@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="REGISTER"
-            android:textColor="#471D43"
+            android:textColor="@color/c_471d43"
             android:textSize="32sp"
             android:textStyle="bold"
             android:layout_marginTop="10dp"/>
@@ -44,7 +44,7 @@
             android:background="@drawable/rounded_edittext"
             android:hint="Enter Email Address"
             android:padding="14dp"
-            android:textColor="#471D43"
+            android:textColor="@color/c_471d43"
             android:textSize="20sp"
             android:layout_marginTop="20dp" />
 
@@ -55,7 +55,7 @@
             android:background="@drawable/rounded_edittext"
             android:hint="Enter Password"
             android:padding="14dp"
-            android:textColor="#471D43"
+            android:textColor="@color/c_471d43"
             android:textSize="20sp"
             android:layout_marginTop="10dp" />
 
@@ -66,7 +66,7 @@
             android:background="@drawable/rounded_edittext"
             android:hint="Confirm Password"
             android:padding="14dp"
-            android:textColor="#471D43"
+            android:textColor="@color/c_471d43"
             android:textSize="20sp"
             android:layout_marginTop="10dp" />
 
@@ -79,7 +79,7 @@
             android:padding="5dp"
             android:text="REGISTER"
             android:gravity="center"
-            android:textColor="#F5EFFF"
+            android:textColor="@color/c_f5Efff"
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_marginTop="20dp" />
