@@ -1,0 +1,1227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_c8bed1"
+    tools:context=".HomeDrinksActivity">
+
+    <LinearLayout
+        android:id="@+id/topnoscroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@android:color/transparent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/Welcome_to_MEALGO"
+            android:textColor="@color/c_471d43"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/Let_us_help_you_choose"
+            android:textColor="@color/c_471d43"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/Choose_your_diet"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView2" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:padding="5dp">
+
+            <!-- Rounded Drawable 1 with Text -->
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/rounded_ffffff"
+                android:gravity="center"
+                android:text="@string/All"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:allCaps="false"/>
+
+            <!-- Rounded Drawable 2 with Text -->
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/rounded_ffffff"
+                android:gravity="center"
+                android:text="@string/Food"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <!-- Rounded Drawable 3 with Text -->
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/rounded_471d43"
+                android:gravity="center"
+                android:text="@string/Drinks"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <!-- Rounded Drawable 4 with Icon -->
+            <LinearLayout
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/rounded_ffffff"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageButton
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/black_search_icon"
+                    android:contentDescription="@string/Black_Search_Icon"
+                    android:background="transparent"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/topnoscroll"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@android:color/transparent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/NewArrivals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/NewArrivalsTitle"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="10dp"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:scrollbars="none"
+                android:background="@android:color/transparent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
+
+                    <FrameLayout
+                        android:layout_width="116dp"
+                        android:layout_height="250dp"
+                        android:layout_marginEnd="8dp">
+
+                        <ImageView
+                            android:id="@+id/gambarmenu2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:src="@drawable/rounded_ffffff"
+                            android:scaleType="fitXY"
+                            android:contentDescription="@string/GambarMenu2"/>
+
+                        <ImageButton
+                            android:id="@+id/menu2"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="top|center_horizontal"
+                            android:src="@drawable/menu2"
+                            android:background="@null"
+                            android:scaleType="centerInside"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:contentDescription="@string/TombolMenu2"/>
+
+                        <TextView
+                            android:id="@+id/namamenu2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/menu2"
+                            android:textAlignment="center"
+                            android:paddingTop="8dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="13sp"
+                            android:layout_marginTop="115dp"
+                            app:layout_constraintTop_toBottomOf="@id/menu2"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                        <TextView
+                            android:id="@+id/descmenu2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/desc2"
+                            android:textColor="@color/black"
+                            android:textSize="8sp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginTop="155dp"
+                            app:layout_constraintTop_toBottomOf="@id/namamenu2"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                        <Button
+                            android:id="@+id/readmore2"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_marginStart="3dp"
+                            android:layout_marginTop="156dp"
+                            android:background="transparent"
+                            android:text="@string/Read_more"
+                            android:textColor="@color/black"
+                            android:textSize="8sp"
+                            android:textAllCaps="false"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/descmenu2" />
+
+                        <LinearLayout
+                            android:id="@+id/menu2tagatas"
+                            android:layout_width="103dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginTop="190dp"
+                            android:gravity="center"
+                            android:weightSum="2"
+                            android:baselineAligned="false">
+
+                            <FrameLayout
+                                android:layout_width="52dp"
+                                android:layout_height="24dp"
+                                android:layout_weight="1"
+                                android:layout_marginEnd="1dp">
+
+                                <ImageView
+                                    android:id="@+id/tag1menu2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/rounded_74687c"
+                                    android:contentDescription="@string/rounded_74687C"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/Paleo"
+                                    android:textStyle="bold"
+                                    android:textSize="9sp"
+                                    android:layout_gravity="center"
+                                    android:textColor="#FFFFFF"
+                                    android:gravity="center"/>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="45dp"
+                                android:layout_height="24dp">
+
+                                <ImageView
+                                    android:id="@+id/tag2menu2"
+                                    android:layout_width="45dp"
+                                    android:layout_height="24dp"
+                                    android:src="@drawable/rounded_74687c"
+                                    android:contentDescription="@string/rounded_74687C"/>
+
+                                <TextView
+                                    android:layout_width="45dp"
+                                    android:layout_height="24dp"
+                                    android:text="@string/Vegan"
+                                    android:textStyle="bold"
+                                    android:textSize="9sp"
+                                    android:textAlignment="center"
+                                    android:textColor="#FFFFFF"
+                                    android:gravity="center"/>
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="116dp"
+                        android:layout_height="250dp"
+                        android:layout_marginEnd="8dp">
+
+                        <ImageView
+                            android:id="@+id/gambarmenu4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:src="@drawable/rounded_ffffff"
+                            android:scaleType="fitXY"
+                            android:contentDescription="@string/GambarMenu4"/>
+
+                        <ImageButton
+                            android:id="@+id/menu4"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="top|center_horizontal"
+                            android:src="@drawable/menu4"
+                            android:background="@null"
+                            android:scaleType="centerInside"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:contentDescription="@string/TombolMenu4"/>
+
+                        <TextView
+                            android:id="@+id/namamenu4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/menu4"
+                            android:textAlignment="center"
+                            android:paddingTop="8dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="13sp"
+                            android:layout_marginTop="115dp"
+                            app:layout_constraintTop_toBottomOf="@id/menu4"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                        <TextView
+                            android:id="@+id/descmenu4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/desc4"
+                            android:textColor="@color/black"
+                            android:textSize="8sp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginTop="155dp"
+                            app:layout_constraintTop_toBottomOf="@id/namamenu4"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                        <Button
+                            android:id="@+id/readmore4"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_marginStart="3dp"
+                            android:layout_marginTop="156dp"
+                            android:background="transparent"
+                            android:text="@string/Read_more"
+                            android:textColor="@color/black"
+                            android:textSize="8sp"
+                            android:textAllCaps="false"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/descmenu4" />
+
+                        <LinearLayout
+                            android:id="@+id/menu4tagatas"
+                            android:layout_width="103dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginTop="190dp"
+                            android:gravity="center"
+                            android:weightSum="2"
+                            android:baselineAligned="false">
+
+                            <FrameLayout
+                                android:layout_width="52dp"
+                                android:layout_height="24dp"
+                                android:layout_weight="1"
+                                android:layout_marginEnd="1dp">
+
+                                <ImageView
+                                    android:id="@+id/tag1menu4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/rounded_74687c"
+                                    android:contentDescription="@string/rounded_74687C"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/Vegan"
+                                    android:textStyle="bold"
+                                    android:textSize="9sp"
+                                    android:layout_gravity="center"
+                                    android:textColor="#FFFFFF"
+                                    android:gravity="center"/>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="45dp"
+                                android:layout_height="24dp">
+
+                                <ImageView
+                                    android:id="@+id/tag2menu4"
+                                    android:layout_width="45dp"
+                                    android:layout_height="24dp"
+                                    android:src="@drawable/rounded_74687c"
+                                    android:contentDescription="@string/rounded_74687C"/>
+
+                                <TextView
+                                    android:layout_width="45dp"
+                                    android:layout_height="24dp"
+                                    android:text="@string/Gluten_Free"
+                                    android:textStyle="bold"
+                                    android:textSize="9sp"
+                                    android:textAlignment="center"
+                                    android:textColor="#FFFFFF"
+                                    android:gravity="center"/>
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="110dp"
+                        android:background="@drawable/rounded_471d43"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <ImageButton
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/white_right_arrow"
+                            android:contentDescription="@string/White_Right_Arrow"
+                            android:background="transparent"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/Popular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/PopularTitle"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="10dp"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:scrollbars="none"
+                android:background="@android:color/transparent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
+
+                    <FrameLayout
+                        android:layout_width="116dp"
+                        android:layout_height="250dp"
+                        android:layout_marginEnd="8dp">
+
+                        <ImageView
+                            android:id="@+id/gambarmenu7"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:src="@drawable/rounded_ffffff"
+                            android:scaleType="fitXY"
+                            android:contentDescription="@string/GambarMenu7"/>
+
+                        <ImageButton
+                            android:id="@+id/menu7"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="top|center_horizontal"
+                            android:src="@drawable/menu7"
+                            android:background="@null"
+                            android:scaleType="centerInside"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:contentDescription="@string/TombolMenu7"/>
+
+                        <TextView
+                            android:id="@+id/namamenu7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/menu7"
+                            android:textAlignment="center"
+                            android:paddingTop="8dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="13sp"
+                            android:layout_marginTop="115dp"
+                            app:layout_constraintTop_toBottomOf="@id/menu7"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                        <TextView
+                            android:id="@+id/descmenu7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/desc7"
+                            android:textColor="@color/black"
+                            android:textSize="8sp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginTop="155dp"
+                            app:layout_constraintTop_toBottomOf="@id/namamenu7"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                        <Button
+                            android:id="@+id/readmore7"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_marginStart="3dp"
+                            android:layout_marginTop="156dp"
+                            android:background="transparent"
+                            android:text="@string/Read_more"
+                            android:textColor="@color/black"
+                            android:textSize="8sp"
+                            android:textAllCaps="false"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/descmenu7" />
+
+                        <LinearLayout
+                            android:id="@+id/menu7tagatas"
+                            android:layout_width="103dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginTop="190dp"
+                            android:gravity="center"
+                            android:weightSum="2"
+                            android:baselineAligned="false">
+
+                            <FrameLayout
+                                android:layout_width="52dp"
+                                android:layout_height="24dp"
+                                android:layout_weight="1"
+                                android:layout_marginEnd="1dp">
+
+                                <ImageView
+                                    android:id="@+id/tag1menu7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/rounded_74687c"
+                                    android:contentDescription="@string/rounded_74687C"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/Keto"
+                                    android:textStyle="bold"
+                                    android:textSize="9sp"
+                                    android:layout_gravity="center"
+                                    android:textColor="#FFFFFF"
+                                    android:gravity="center"/>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="45dp"
+                                android:layout_height="24dp">
+
+                                <ImageView
+                                    android:id="@+id/tag2menu7"
+                                    android:layout_width="45dp"
+                                    android:layout_height="24dp"
+                                    android:src="@drawable/rounded_74687c"
+                                    android:contentDescription="@string/rounded_74687C"/>
+
+                                <TextView
+                                    android:layout_width="45dp"
+                                    android:layout_height="24dp"
+                                    android:text="@string/Paleo"
+                                    android:textStyle="bold"
+                                    android:textSize="9sp"
+                                    android:textAlignment="center"
+                                    android:textColor="#FFFFFF"
+                                    android:gravity="center"/>
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="116dp"
+                        android:layout_height="250dp"
+                        android:layout_marginEnd="8dp">
+
+                        <ImageView
+                            android:id="@+id/gambarmenu10"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:src="@drawable/rounded_ffffff"
+                            android:scaleType="fitXY"
+                            android:contentDescription="@string/GambarMenu10"/>
+
+                        <ImageButton
+                            android:id="@+id/menu10"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="top|center_horizontal"
+                            android:src="@drawable/menu10"
+                            android:background="@null"
+                            android:scaleType="centerInside"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:contentDescription="@string/TombolMenu10"/>
+
+                        <TextView
+                            android:id="@+id/namamenu10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/menu10"
+                            android:textAlignment="center"
+                            android:paddingTop="8dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="13sp"
+                            android:layout_marginTop="115dp"
+                            app:layout_constraintTop_toBottomOf="@id/menu10"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                        <TextView
+                            android:id="@+id/descmenu10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/desc10"
+                            android:textColor="@color/black"
+                            android:textSize="8sp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginTop="155dp"
+                            app:layout_constraintTop_toBottomOf="@id/namamenu10"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                        <Button
+                            android:id="@+id/readmore10"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_marginStart="3dp"
+                            android:layout_marginTop="156dp"
+                            android:background="transparent"
+                            android:text="@string/Read_more"
+                            android:textColor="@color/black"
+                            android:textSize="8sp"
+                            android:textAllCaps="false"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/descmenu10" />
+
+                        <LinearLayout
+                            android:id="@+id/menu10tagatas"
+                            android:layout_width="103dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginTop="190dp"
+                            android:gravity="center"
+                            android:weightSum="2"
+                            android:baselineAligned="false">
+
+                            <FrameLayout
+                                android:layout_width="52dp"
+                                android:layout_height="24dp"
+                                android:layout_weight="1"
+                                android:layout_marginEnd="1dp">
+
+                                <ImageView
+                                    android:id="@+id/tag1menu10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/rounded_74687c"
+                                    android:contentDescription="@string/rounded_74687C"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/Vegan"
+                                    android:textStyle="bold"
+                                    android:textSize="9sp"
+                                    android:layout_gravity="center"
+                                    android:textColor="#FFFFFF"
+                                    android:gravity="center"/>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="45dp"
+                                android:layout_height="24dp">
+
+                                <ImageView
+                                    android:id="@+id/tag2menu10"
+                                    android:layout_width="45dp"
+                                    android:layout_height="24dp"
+                                    android:src="@drawable/rounded_74687c"
+                                    android:contentDescription="@string/rounded_74687C"/>
+
+                                <TextView
+                                    android:layout_width="45dp"
+                                    android:layout_height="24dp"
+                                    android:text="@string/Mediterranean"
+                                    android:textStyle="bold"
+                                    android:textSize="9sp"
+                                    android:textAlignment="center"
+                                    android:textColor="#FFFFFF"
+                                    android:gravity="center"/>
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="110dp"
+                        android:background="@drawable/rounded_471d43"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <ImageButton
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/white_right_arrow"
+                            android:contentDescription="@string/White_Right_Arrow"
+                            android:background="transparent"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/Explore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ExploreTitle"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="10dp"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:scrollbars="none"
+                android:background="@android:color/transparent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
+
+                    <FrameLayout
+                        android:layout_width="116dp"
+                        android:layout_height="250dp"
+                        android:layout_marginEnd="8dp">
+
+                        <ImageView
+                            android:id="@+id/gambarmenu13"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:src="@drawable/rounded_ffffff"
+                            android:scaleType="fitXY"
+                            android:contentDescription="@string/GambarMenu13"/>
+
+                        <ImageButton
+                            android:id="@+id/menu13"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="top|center_horizontal"
+                            android:src="@drawable/menu13"
+                            android:background="@null"
+                            android:scaleType="centerInside"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:contentDescription="@string/TombolMenu13"/>
+
+                        <TextView
+                            android:id="@+id/namamenu13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/menu13"
+                            android:textAlignment="center"
+                            android:paddingTop="8dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="13sp"
+                            android:layout_marginTop="115dp"
+                            app:layout_constraintTop_toBottomOf="@id/menu13"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                        <TextView
+                            android:id="@+id/descmenu13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/desc13"
+                            android:textColor="@color/black"
+                            android:textSize="8sp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginTop="155dp"
+                            app:layout_constraintTop_toBottomOf="@id/namamenu13"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                        <Button
+                            android:id="@+id/readmore13"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_marginStart="3dp"
+                            android:layout_marginTop="156dp"
+                            android:background="transparent"
+                            android:text="@string/Read_more"
+                            android:textColor="@color/black"
+                            android:textSize="8sp"
+                            android:textAllCaps="false"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/descmenu13" />
+
+                        <LinearLayout
+                            android:id="@+id/menu13tagatas"
+                            android:layout_width="103dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginTop="190dp"
+                            android:gravity="center"
+                            android:weightSum="2"
+                            android:baselineAligned="false">
+
+                            <FrameLayout
+                                android:layout_width="52dp"
+                                android:layout_height="24dp"
+                                android:layout_weight="1"
+                                android:layout_marginEnd="1dp">
+
+                                <ImageView
+                                    android:id="@+id/tag1menu13"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/rounded_74687c"
+                                    android:contentDescription="@string/rounded_74687C"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/Vegan"
+                                    android:textStyle="bold"
+                                    android:textSize="9sp"
+                                    android:layout_gravity="center"
+                                    android:textColor="#FFFFFF"
+                                    android:gravity="center"/>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="45dp"
+                                android:layout_height="24dp">
+
+                                <ImageView
+                                    android:id="@+id/tag2menu13"
+                                    android:layout_width="45dp"
+                                    android:layout_height="24dp"
+                                    android:src="@drawable/rounded_74687c"
+                                    android:contentDescription="@string/rounded_74687C"/>
+
+                                <TextView
+                                    android:layout_width="45dp"
+                                    android:layout_height="24dp"
+                                    android:text="@string/Paleo"
+                                    android:textStyle="bold"
+                                    android:textSize="9sp"
+                                    android:textAlignment="center"
+                                    android:textColor="#FFFFFF"
+                                    android:gravity="center"/>
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="116dp"
+                        android:layout_height="250dp"
+                        android:layout_marginEnd="8dp">
+
+                        <ImageView
+                            android:id="@+id/gambarmenu16"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:src="@drawable/rounded_ffffff"
+                            android:scaleType="fitXY"
+                            android:contentDescription="@string/GambarMenu16"/>
+
+                        <ImageButton
+                            android:id="@+id/menu16"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="top|center_horizontal"
+                            android:src="@drawable/menu16"
+                            android:background="@null"
+                            android:scaleType="centerInside"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:contentDescription="@string/TombolMenu16"/>
+
+                        <TextView
+                            android:id="@+id/namamenu16"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/menu16"
+                            android:textAlignment="center"
+                            android:paddingTop="8dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="13sp"
+                            android:layout_marginTop="115dp"
+                            app:layout_constraintTop_toBottomOf="@id/menu16"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                        <TextView
+                            android:id="@+id/descmenu16"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/desc16"
+                            android:textColor="@color/black"
+                            android:textSize="8sp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginTop="155dp"
+                            app:layout_constraintTop_toBottomOf="@id/namamenu16"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                        <Button
+                            android:id="@+id/readmore16"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_marginStart="3dp"
+                            android:layout_marginTop="156dp"
+                            android:background="transparent"
+                            android:text="@string/Read_more"
+                            android:textColor="@color/black"
+                            android:textSize="8sp"
+                            android:textAllCaps="false"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/descmenu16" />
+
+                        <LinearLayout
+                            android:id="@+id/menu16tagatas"
+                            android:layout_width="103dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginTop="190dp"
+                            android:gravity="center"
+                            android:weightSum="2"
+                            android:baselineAligned="false">
+
+                            <FrameLayout
+                                android:layout_width="52dp"
+                                android:layout_height="24dp"
+                                android:layout_weight="1"
+                                android:layout_marginEnd="1dp">
+
+                                <ImageView
+                                    android:id="@+id/tag1menu16"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/rounded_74687c"
+                                    android:contentDescription="@string/rounded_74687C"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/Interminttent_Fasting"
+                                    android:textStyle="bold"
+                                    android:textSize="9sp"
+                                    android:layout_gravity="center"
+                                    android:textColor="#FFFFFF"
+                                    android:gravity="center"/>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="45dp"
+                                android:layout_height="24dp">
+
+                                <ImageView
+                                    android:id="@+id/tag2menu16"
+                                    android:layout_width="45dp"
+                                    android:layout_height="24dp"
+                                    android:src="@drawable/rounded_74687c"
+                                    android:contentDescription="@string/rounded_74687C"/>
+
+                                <TextView
+                                    android:layout_width="45dp"
+                                    android:layout_height="24dp"
+                                    android:text="@string/Whole30"
+                                    android:textStyle="bold"
+                                    android:textSize="9sp"
+                                    android:textAlignment="center"
+                                    android:textColor="#FFFFFF"
+                                    android:gravity="center"/>
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="116dp"
+                        android:layout_height="250dp"
+                        android:layout_marginEnd="8dp">
+
+                        <ImageView
+                            android:id="@+id/gambarmenu17"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:src="@drawable/rounded_ffffff"
+                            android:scaleType="fitXY"
+                            android:contentDescription="@string/GambarMenu17"/>
+
+                        <ImageButton
+                            android:id="@+id/menu17"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="top|center_horizontal"
+                            android:src="@drawable/menu17"
+                            android:background="@null"
+                            android:scaleType="centerInside"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:contentDescription="@string/TombolMenu17"/>
+
+                        <TextView
+                            android:id="@+id/namamenu17"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/menu17"
+                            android:textAlignment="center"
+                            android:paddingTop="8dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="13sp"
+                            android:layout_marginTop="115dp"
+                            app:layout_constraintTop_toBottomOf="@id/menu17"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                        <TextView
+                            android:id="@+id/descmenu17"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/desc17"
+                            android:textColor="@color/black"
+                            android:textSize="8sp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginTop="155dp"
+                            app:layout_constraintTop_toBottomOf="@id/namamenu17"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                        <Button
+                            android:id="@+id/readmore17"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_marginStart="3dp"
+                            android:layout_marginTop="156dp"
+                            android:background="transparent"
+                            android:text="@string/Read_more"
+                            android:textColor="@color/black"
+                            android:textSize="8sp"
+                            android:textAllCaps="false"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/descmenu17" />
+
+                        <LinearLayout
+                            android:id="@+id/menu17tagatas"
+                            android:layout_width="103dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginTop="190dp"
+                            android:gravity="center"
+                            android:weightSum="2"
+                            android:baselineAligned="false">
+
+                            <FrameLayout
+                                android:layout_width="45dp"
+                                android:layout_height="24dp"
+                                android:layout_weight="1"
+                                android:layout_marginEnd="1dp">
+
+                                <ImageView
+                                    android:id="@+id/tag1menu17"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/rounded_74687c"
+                                    android:contentDescription="@string/rounded_74687C"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/Keto"
+                                    android:textStyle="bold"
+                                    android:textSize="9sp"
+                                    android:layout_gravity="center"
+                                    android:textColor="#FFFFFF"
+                                    android:gravity="center"/>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="52dp"
+                                android:layout_height="24dp">
+
+                                <ImageView
+                                    android:id="@+id/tag2menu17"
+                                    android:layout_width="52dp"
+                                    android:layout_height="24dp"
+                                    android:src="@drawable/rounded_74687c"
+                                    android:contentDescription="@string/rounded_74687C"/>
+
+                                <TextView
+                                    android:layout_width="52dp"
+                                    android:layout_height="24dp"
+                                    android:text="@string/Paleo"
+                                    android:textStyle="bold"
+                                    android:textSize="9sp"
+                                    android:textAlignment="center"
+                                    android:textColor="#FFFFFF"
+                                    android:gravity="center"/>
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="110dp"
+                        android:background="@drawable/rounded_471d43"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <ImageButton
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/white_right_arrow"
+                            android:contentDescription="@string/White_Right_Arrow"
+                            android:background="transparent"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
