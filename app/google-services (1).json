@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "965170580177",
+    "project_id": "mealgo-731c7",
+    "storage_bucket": "mealgo-731c7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:965170580177:android:dbf0fcf5407aa1da9793f0",
+        "android_client_info": {
+          "package_name": "com.example.mealgo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBx6osaEaszBzF_oFmuo3VLwxft7_Z05ZY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
