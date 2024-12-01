@@ -66,6 +66,7 @@
 
             <!-- Rounded Drawable 1 with Text -->
             <Button
+                android:id="@+id/allbutton"
                 android:layout_width="0dp"
                 android:layout_height="48dp"
                 android:layout_weight="1"
@@ -80,6 +81,7 @@
 
             <!-- Rounded Drawable 2 with Text -->
             <Button
+                android:id="@+id/foodbutton"
                 android:layout_width="0dp"
                 android:layout_height="48dp"
                 android:layout_weight="1"
@@ -93,6 +95,7 @@
 
             <!-- Rounded Drawable 3 with Text -->
             <Button
+                android:id="@+id/drinksbutton"
                 android:layout_width="0dp"
                 android:layout_height="48dp"
                 android:layout_weight="1"
@@ -106,20 +109,21 @@
 
             <!-- Rounded Drawable 4 with Icon -->
             <LinearLayout
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:layout_weight="1"
+                android:layout_width="100dp"
+                android:layout_height="51dp"
                 android:layout_margin="5dp"
+                android:layout_weight="1"
                 android:background="@drawable/rounded_ffffff"
-                android:orientation="horizontal"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="horizontal">
 
                 <ImageButton
+                    android:id="@+id/searchbutton"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
-                    android:src="@drawable/black_search_icon"
+                    android:background="transparent"
                     android:contentDescription="@string/Black_Search_Icon"
-                    android:background="transparent"/>
+                    android:src="@drawable/black_search_icon" />
 
             </LinearLayout>
 
@@ -444,6 +448,7 @@
                         android:gravity="center">
 
                         <ImageButton
+                            android:id="@+id/nextNewArrival"
                             android:layout_width="48dp"
                             android:layout_height="48dp"
                             android:src="@drawable/white_right_arrow"
@@ -759,6 +764,7 @@
                         android:gravity="center">
 
                         <ImageButton
+                            android:id="@+id/nextPopural"
                             android:layout_width="48dp"
                             android:layout_height="48dp"
                             android:src="@drawable/white_right_arrow"
@@ -1208,6 +1214,7 @@
                         android:gravity="center">
 
                         <ImageButton
+                            android:id="@+id/nextExplore"
                             android:layout_width="48dp"
                             android:layout_height="48dp"
                             android:src="@drawable/white_right_arrow"
